@@ -1,0 +1,137 @@
+
+.list{
+  margin-top: 32px;
+  margin-bottom: 19px;
+  margin-left: 46px;
+  .listItem{
+    width: 412px;
+    height: 45px;
+    border: solid 1px #E7E9EB;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    label{
+      width: 46px;
+      height: 45px;
+      border-right: solid 1px #E7E9EB;
+      position: relative;
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 28px;
+      }
+    }
+    button{
+      color: #007AFF;
+      font-size: 16px;
+      position: absolute;
+      height: 45px;
+      cursor: pointer;
+      line-height: 45px;
+      right: 15px;
+      z-index: 10;
+    }
+    .dropdown{
+      color: #3E4551;
+      font-size: 18px;
+      line-height: 45px;
+      padding-left: 15px;
+      margin-right: 15px;
+      cursor: pointer;
+      .BottomIcon{
+        width: 15px;
+        height: 8px;
+        margin-left: 10px;
+      }
+    }
+    input{
+      border: none;
+      font-size: 18px;
+      padding-left: 11px;
+      padding-right: 11px;
+      flex: 1;
+      max-width: 350px;
+      &.phoneStyle{
+        max-width: 280px;
+      }
+    }
+  }
+  .safe{
+    height: 46px;
+    display: flex;
+    font-size: 16px;
+    color: #B2B8C4;
+    align-items: center;
+    .safeBg{
+      position: relative;
+      width: 303px;
+      height: 6px;
+      background-color: #E7E9EB;
+      border-radius: 3px;
+      margin-right: 10px;
+      .safeNum{
+        width: 30%;
+        background-color: #007AFF;
+        position: absolute;
+        height: 6px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+.checkAgree{
+  display: flex;
+  padding-left: 46px;
+  height: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: #3E4551;
+  cursor: pointer;
+  .checkIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 11px;
+    &.checked{
+      background-color: #007AFF;
+    }
+    &.check{
+      background-color: #E7E9EB;
+    }
+    img{
+      width: 16px;
+      height: 12px;
+      display: block;
+      margin-top: 4px;
+      margin-left: 2px;
+    }
+  }
+}
+.btn{
+  width: 212px;
+  height: 43px;
+  background-color: #007AFF;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 43px;
+  font-size: 18px;
+  display: block;
+  margin: 28px auto 25px;
+  cursor: pointer;
+}
+.userAgree{
+  padding-left: 10px;
+  color: #007AFF;
+  cursor: pointer;
+  &:link{
+    color: #007AFF;
+  }
+  &:hover{
+    color: #007AFF;
+  }
+}

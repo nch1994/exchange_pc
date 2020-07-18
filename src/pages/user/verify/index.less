@@ -1,0 +1,94 @@
+.container{
+  position: relative;
+  min-height: inherit;
+  height: 100%;
+  width: 100%;
+  background-image: url('@/assets/image/user/bg.jpg');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -60px;
+  .login{
+    width: 500px;
+    height: auto;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -195px;
+    margin-left: -250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #eeeeee;
+    .title{
+      padding-left: 46px;
+      height: 113px;
+      line-height: 113px;
+      color: #3E4551;
+      font-size: 32px;
+    }
+    .list{
+      margin-bottom: 30px;
+      .listItem{
+        width: 412px;
+        height: 45px;
+        border: solid 1px #E7E9EB;
+        border-radius: 8px;
+        display: flex;
+        margin-left: 46px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        label{
+          width: 46px;
+          height: 45px;
+          border-right: solid 1px #E7E9EB;
+          position: relative;
+          img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 28px;
+          }
+        }
+        input{
+          border: none;
+          font-size: 18px;
+          padding-left: 11px;
+          flex: 1;
+          padding-right: 11px;
+          max-width: 350px;
+        }
+        button{
+          color: #007AFF;
+          font-size: 16px;
+          position: absolute;
+          height: 45px;
+          cursor: pointer;
+          line-height: 45px;
+          right: 15px;
+        }
+      }
+    }
+    .btnWrap{
+      width: 414px;
+      margin: 0 auto;
+      button{
+        width: 198px;
+        height: 43px;
+        background-color: #007AFF;
+        color: #ffffff;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 43px;
+        cursor: pointer;
+        font-size: 18px;
+        &:nth-child(2){
+          background-color: #13174A;
+          margin-left: 17px;
+        }
+      }
+    }
+  }
+}

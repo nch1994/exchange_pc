@@ -1,0 +1,11 @@
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
+src/pages/trading/charting_library/*
+src/pages/trading/datafeeds/*
+src/pages/trading/TVChartContainer/*
+src/pages/trading/api/*
+src/pages/*
+/src

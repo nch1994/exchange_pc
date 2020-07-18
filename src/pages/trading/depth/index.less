@@ -1,0 +1,126 @@
+.depth{
+  width: 100%;
+  height: 540px;
+  .title{
+    padding-left: 15px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #D7E2F1;
+    font-weight: bold;
+    background-color: #0F1F3D;
+    font-size: 14px;
+  }
+  .items{
+    .itemH{
+      height: 180px;
+    }
+    .item{
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      justify-content: space-between;
+      color: #D7E2F2;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      &.subTitle{
+        height: 38px !important;
+        line-height: 38px !important;
+        border-bottom: solid 1px rgba(#E6ECF2, 0.03);
+      }
+      .red{
+        color: #D74E5A;
+      }
+      .green{
+        color: #40AD7A;
+      }
+      .bgColor{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+      }
+    }
+    .cny{
+      margin-top: 10px;
+      color: #D7E2F2;
+      font-size: 14px;
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-top: solid 1px rgba(#E6ECF2, 0.05);
+      border-bottom: solid 1px rgba(#E6ECF2, 0.05);
+      cursor: pointer;
+      span{
+        color: #40AD7A;
+        font-size: 16px;
+      }
+    }
+  }
+  .split{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .splitLeft{
+      padding-left: 15px;
+      color: #D7E2F2;
+      font-size: 15px;
+      img{
+        margin-left: 3px;
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .splitRight{
+      display: flex;
+      li{
+        margin-right: 10px;
+        border-radius: 2px;
+        display: flex;
+        width: 18px;
+        height: 15px;
+        flex-direction: column;
+        span:nth-child(1){
+          display: block;
+          height: 7px;
+          width: 18px;
+        }
+        span:nth-child(2){
+          display: block;
+          height: 8px;
+          width: 18px;
+        }
+      }
+    }
+    .numberList{
+      position: absolute;
+      left: 6px;
+      bottom: 20px;
+      border-radius: 2px;
+      background-color: #060C30;
+      li{
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #D7E2F2;
+        padding-left: 8px;
+        padding-right: 8px;
+        cursor: pointer;
+        &.active{
+          color: #007AFF;
+        }
+        &:hover{
+          color: #007AFF;
+        }
+      }
+    }
+  }
+}

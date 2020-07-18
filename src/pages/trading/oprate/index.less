@@ -1,0 +1,209 @@
+.oprate{
+  width: 100%;
+  height: 100%;
+  .title{
+    display: flex;
+    background-color: #0F1F3D;
+    padding-left: 4%;
+    margin-bottom: 31px;
+    li{
+      cursor: pointer;
+      color: #5B6B7B;
+      margin-right: 34px;
+      font-size: 14px;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: solid 3px transparent;
+      &.active{
+        color: #007AFF;
+        border-bottom: solid 3px #007AFF;
+        font-weight: bold;
+      }
+    }
+  }
+  .content{
+    .price{
+      display: flex;
+      padding-left: 4%;
+      button{
+        color: #5B6B7B;
+        height: 32px;
+        border: solid 1px #354A70;
+        border-radius: 2px;
+        font-size: 14px;
+        background-color: transparent;
+        margin-right: 20px;
+        width: 68px;
+        cursor: pointer;
+        &.active{
+          color: #FFFFFF;
+          background-color: #007AFF;
+          border: solid 1px #007AFF;
+        }
+      }
+      
+    }
+    .form{
+      padding-top: 31px;
+      font-weight: bold;
+      position: relative;
+      .item{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4%;
+        padding-right: 4%;
+        flex-wrap: nowrap;
+        input{
+          width: 70%;
+        }
+        &.myPrice{
+          display: flex;
+          div{
+            flex: 1;
+            margin-right: 4%;
+            input{
+              width: 45%;
+            }
+          }
+        }
+        &.marketPrice{
+          div{
+            width: 100%;
+            input{
+              cursor: default;
+            }
+          }
+        }
+        &.count {
+          margin-top: 24px;
+          div{
+            width: 100%;
+          }
+        }
+        div{
+          display: flex;
+          align-items: center;
+          width: 70vw;
+          height: 42px;
+          border: solid 1px #354A70;
+          border-radius: 3px;
+          position: relative;
+          label{
+            width: 56px;
+          }
+          label, span{
+            color: #5B6B7B;
+            font-size: 12px;
+            padding-left: 16px;
+          }
+          span{
+            position: absolute;
+            right: 10px;
+          }
+          input{
+            background-color: transparent;
+            color: #D7E2F2;
+            &.oprateInput::placeholder{
+              color: #D7E2F2;
+            }
+          }
+        }
+        button{
+          width: 68px;
+          border: solid 1px #354A70;
+          font-size: 12px;
+          color: #5B6B7B;
+          border-radius: 3px;
+          height: 42px;
+          line-height: 42px;
+          cursor: pointer;
+        }
+      }
+      .toast{
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 10px 12px;
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 24px;
+        position: absolute;
+        width: 210px;
+        top: -50px;
+        left: 160px;
+        z-index: 10;
+      }
+    }
+    .percent{
+      margin-top: 24px;
+      display: flex;
+      padding-left: 4%;
+      padding-right: 4%;
+      justify-content: space-between;
+      li{
+        width: 68px;
+        height: 34px;
+        border-radius: 2px;
+        border: solid 1px #354A70;
+        font-size: 14px;
+        color: #5B6B7B;
+        text-align: center;
+        line-height: 34px;
+        cursor: pointer;
+        &.active{
+          background-color: #007AFF;
+          border: solid 1px #007AFF;
+          color: #ffffff;
+        }
+      }
+    }
+    .available{
+      margin-top: 20px;
+      padding-left: 4%;
+      padding-right: 4%;
+      display: flex;
+      justify-content: space-between;
+      color: #D7E2F2;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .buttonWrap{
+      padding-left: 4%;
+      padding-right: 4%;
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      li{
+        &:nth-child(1){
+          button{
+            background-color: #40AD7A;
+          }
+        }
+        width: 48%;
+        button{
+          width: 100%;
+          height: 45px;
+          border-radius: 2px;
+          text-align: center;
+          line-height: 45px;
+          font-size: 14px;
+          color: #D7E2F2;
+          font-weight: bold;
+          background-color: #D74E5A;
+          cursor: pointer;
+          span{
+            color: rgba(#D7E2F2, 0.5);
+            padding-left: 14px;
+          }
+        }
+        p{
+          color: #D7E2F2;
+          font-weight: bold;
+          color: 12px;
+          padding-top: 12px;
+        }
+      }
+      
+    }
+  }
+}

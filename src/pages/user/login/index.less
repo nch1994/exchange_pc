@@ -1,0 +1,101 @@
+.container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: inherit;
+  background-image: url('@/assets/image/user/bg.jpg');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -60px;
+  z-index: 10;
+  .login{
+    width: 500px;
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -195px;
+    margin-left: -250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #eeeeee;
+    .title{
+      padding-left: 46px;
+      height: 107px;
+      line-height: 107px;
+      color: #3E4551;
+      font-size: 32px;
+    }
+    .list{
+      .listItem{
+        width: 412px;
+        height: 45px;
+        border: solid 1px #E7E9EB;
+        border-radius: 8px;
+        display: flex;
+        margin-left: 46px;
+        overflow: hidden;
+        &:nth-child(1){
+          margin-bottom: 50px;
+        }
+        label{
+          width: 46px;
+          height: 45px;
+          border-right: solid 1px #E7E9EB;
+          position: relative;
+          img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 28px;
+          }
+        }
+        input{
+          border: none;
+          font-size: 18px;
+          padding-left: 11px;
+          padding-right: 11px;
+          flex: 1;
+          max-width: 350px;
+        }
+      }
+    }
+    .notice{
+      line-height: 56px;
+      height: 56px;
+      width: 414px;
+      font-size: 14px;
+      display: flex;
+      margin: 0 auto;
+      justify-content: flex-end;
+      p:nth-child(1){
+        color: #3E4551;
+      }
+      p:nth-child(2){
+        cursor: pointer;
+        color: #007AFF;
+        text-align: right;
+        .linkUrl:nth-child(1){
+          border-right: solid 1px #007AFF;
+          padding-right: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .btn{
+      cursor: pointer;
+      width: 212px;
+      height: 43px;
+      background-color: #007AFF;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 3px;
+      line-height: 43px;
+      font-size: 18px;
+      display: block;
+      margin: 12px auto;
+    }
+  }
+}

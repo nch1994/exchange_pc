@@ -1,0 +1,70 @@
+.rateList{
+  width: 100%;
+  min-width: 1200px;
+  display: flex;
+  height: 270px;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(6,12,49,0.12);
+  background-color: #ffffff;
+  .reteItem{
+    flex: 1;
+    padding-left: 32px;
+    padding-right: 27px;
+    border-right: solid 1px #F0F0F0;
+    cursor: pointer;
+    &:nth-child(3){
+      border-right: none;
+    }
+    .itemTop{
+      padding-top: 36px;
+      padding-bottom: 17px;
+      border-bottom: solid 1px #F0F0F0;
+      position: relative;
+      .itemTopTitle{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #3E4551;
+        img{
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+      .itemTopUSDT{
+        height: 58px;
+        line-height: 58px;
+        color: #3E4551;
+        font-size: 24px;
+        font-family: '微软雅黑', 'Microsoft YaHei';
+      }
+      .trend{
+        position: absolute;
+        right: 0;
+        top: 59px;
+        font-size: 24px;
+        font-family: '微软雅黑', 'Microsoft YaHei';
+        &.trendUp{
+          color: #40AD7A;
+        }
+        &.trendDown{
+          color: #FA6A46;
+        }
+        img{
+          width: 48px;
+          height: 24px;
+          margin-right: 15px;
+        }
+      } 
+    }
+    .itemBottom{
+      padding-top: 20px;
+      display: flex;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

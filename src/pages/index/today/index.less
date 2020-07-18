@@ -1,0 +1,100 @@
+
+.todayNiuren{
+  width: 100%;
+  .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    li:nth-child(1) {
+      margin-right: 19px;
+      img{
+        width: 58px;
+        height: 52px;
+      }
+    }
+    li:nth-child(2) {
+      margin-right: 30px;
+      p:nth-child(1){
+        color: #3E4551;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+      }
+      p:nth-child(2) {
+        color: #B2B8C4;
+        font-size: 16px;
+        height: 22px;
+        line-height: 22px;
+      }
+    }
+    li:nth-child(3){
+      font-size: 14px;
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .table{
+    padding-top: 15px;
+    tr{
+      height: 40px;
+      th{
+        font-weight: bold;
+        color: rgb(75, 81, 90);
+        font-size: 16px;
+        text-align: center;
+        border-bottom: none;
+      }
+      td{
+        border-bottom: none;
+        text-align: center;
+        color: rgba(0, 0, 0, .75);
+        font-size: 16px;
+        .rank{
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          color: rgba(0, 0, 0, .75);
+          border-radius: 50%;
+        }
+        &:nth-last-child(1) {
+          width: 120px;
+        }
+      }
+      &:nth-child(1) {
+        td{
+          .rank{
+            background-color: #FFD371;
+            color: #ffffff;
+          }
+          .rate{
+            color: #FFD371;
+          }
+        }
+      }
+      &:nth-child(2) {
+        td{
+          .rank{
+            background-color: #98C2FD;
+            color: #ffffff;
+          }
+          .rate{
+            color: #98C2FD;
+          }
+        }
+      }
+      &:nth-child(3){
+        td{
+          .rank{
+            background-color: #E9B382;
+            color: #ffffff;
+          }
+          .rate{
+            color: #E9B382;
+          }
+        }
+      }
+    }
+  }
+}

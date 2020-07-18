@@ -1,0 +1,237 @@
+.chargeWrap{
+  .chargeTop{
+    width: 100%;
+    height: 426px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    .chargeTopTitle{
+      height: 50px;
+      padding-left: 33px;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+      span{
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: solid 2px #007AFF;
+        font-size: 16px;
+      }
+    }
+    .chargeNotice{
+      width: 609px;
+      height: 70px;
+      box-shadow:0px 0px 6px 0px rgba(59,123,253,0.09);
+      position: relative;
+      margin-left: 33px;
+      margin-bottom: 23px;
+      display: flex;
+      align-items: center;
+      span{
+        width: 4px;
+        height: 30px;
+        background-color: #FBA85A;
+        border-radius: 2px;
+        display: inline-block;
+      }
+      p{
+        color: #FBA85A;
+        font-size: 14px;
+        left: 19px;
+        position: absolute;
+      }
+    }
+    .form{
+      li{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 11px;
+        position: relative;
+        label {
+          width: 83px;
+          text-align: right;
+          margin-right: 24px;
+          font-size: #060C30;
+          color: 14px;
+        }
+        div{
+          border: solid 1px #F1F1F1;
+          border-radius: 2px;
+          width: 525px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          position: relative;
+          .types{
+            margin-left: 11px;
+          }
+          .icon{
+            position: absolute;
+            right: 17px;
+            width: 18px;
+            height: auto;
+            cursor: pointer;
+          }
+          .copy{
+            position: absolute;
+            right: 59px;
+            cursor: pointer;
+          }
+          .code{
+            position: absolute;
+            right: 17px;
+            cursor: pointer;
+          }
+          input{
+            margin-left: 12px;
+            border: none;
+            font-size: 14px;
+            columns: #7C88A0;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .list{
+          position: absolute;
+          height: auto;
+          top: 40px;
+          left: 107px;
+          background-color: #ffffff;
+          width: 525px;
+          z-index: 10;
+          border-left: solid 1px #F1F1F1;
+          border-right: solid 1px #F1F1F1;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-bottom: solid 1px #F1F1F1;
+          li{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: 42px;
+            border-bottom: solid 1px #F1F1F1;
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+            margin-bottom: 0;
+            img{
+              width: 24px;
+              margin-right: 12px;
+              margin-left: 11px;
+            }
+          }
+        }
+        .transferInput{
+          border: none;
+          .transferDiv{
+            width: 222px;
+            height: 40px;
+            border: solid 1px #F1F1F1;
+            border-radius: 2px;
+            display: flex;
+            padding-left: 12px;
+            justify-content: space-between;
+            align-items: normal;
+            position: relative;
+            color: #060C30;
+            line-height: 40px;
+            img{
+              width: 15px;
+              height: 8px;
+              position: absolute;
+              top: 50%;
+              right: 19px;
+              transform: translate(0, -50%);
+            }
+            ul{
+              position: absolute;
+              width: 220px;
+              z-index: 10;
+              left: 0;
+              top: 40px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-left: solid 1px #F1F1F1;
+              border-right: solid 1px #F1F1F1;
+              border-bottom: solid 1px #F1F1F1;
+              background-color: #ffffff;
+              li{
+                height: 36px;
+                line-height: 36px;
+                color: #060C30;
+                padding-left: 12px;
+                margin-bottom: 0;
+                cursor: pointer;
+              }
+            }
+          }
+          .transferIcon{
+            width: 43px;
+            height: 43px;
+            margin-left: 17px;
+            margin-right: 21px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .count{
+      height: 20px;
+      line-height: 20px;
+      color: #7C88A0;
+      font-size: 14px;
+      padding-left: 128px;
+    }
+    .btn{
+      margin-top: 20px;
+      width: 300px;
+      height: 47px;
+      text-align: center;
+      line-height: 47px;
+      background-color: #007AFF;
+      margin-left: 172px;
+      color: #ffffff;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+  .chargeBottom{
+    width: 100%;
+    background-color: #ffffff;
+    .chargeBottomTitle{
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+      height: 51px;
+      line-height: 51px;
+      padding-left: 33px;
+      font-weight: bold;
+      color: #060C30;
+      font-size: 16px;
+    }
+    .table{
+      margin-top: 4px;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 20px;
+      tr{
+        height: 36px;
+        line-height: 36px;
+        th{
+          background-color: #ffffff;
+          border-bottom: none;
+          text-align: center;
+          color: #060C30;
+          font-size: 14px;
+        }
+        td{
+          border-bottom: none;
+          text-align: center;
+          color: #7C88A0;
+          font-size: 14px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

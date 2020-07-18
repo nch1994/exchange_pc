@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <meta data-n-head="true" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta data-n-head="true" name="renderer" content="webkit">
+  <meta data-n-head="true" data-hid="format-detection" name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>STARQUEEN</title>
+  <link rel="icon" href="./favicon.png" type="image/x-icon" />
+</head>
+<script>
+function mobile_device_detect(url) {
+  var thisOS=navigator.platform;
+  var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
+  for(var i=0;i<os.length;i++) {
+    if(thisOS.match(os[i])) {  
+      window.location=url;
+    }      
+  }
+  //因为相当部分的手机系统不知道信息,这里是做临时性特殊辨认
+  if(navigator.platform.indexOf('iPad') != -1) {
+      window.location=url;
+  }
+  //做这一部分是因为Android手机的内核也是Linux
+  //但是navigator.platform显示信息不尽相同情况繁多,因此从浏览器下手，即用navigator.appVersion信息做判断
+  var check = navigator.appVersion;
+  if( check.match(/linux/i) ) {
+  //X11是UC浏览器的平台 ，如果有其他特殊浏览器也可以附加上条件
+  if(check.match(/mobile/i) || check.match(/X11/i)) {
+    window.location=url;
+  } 
+}
+ //类in_array函数
+Array.prototype.in_array = function(e) {
+  for(i=0;i<this.length;i++) {
+    if(this[i] == e)
+      return true;
+    }
+    return false;
+  }
+}
+mobile_device_detect("https://h5.starqueen.top");
+// mobile_device_detect("http://123.57.60.24/exchange_h5/index.html#/index")
+</script>
+<body>
+  <div id="root"></div>
+</body>
+</html>

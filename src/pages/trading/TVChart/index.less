@@ -1,0 +1,110 @@
+.tvContainer{
+  position: relative;
+}
+.coinList{
+  display: flex;
+  color: #cccccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+  .timeList{
+    display: flex;
+    margin-right: 10px;
+    li{
+      padding-left: 6px;
+      padding-right: 6px;
+      cursor: pointer;
+      &.selected{
+        color: #007aff !important;
+      }
+    }
+  }
+  .border{
+    height: 20px;
+    width: 1px;
+    background-color: hsla(0,0%,100%,.25);
+    margin-top: 9px;
+  }
+  .headerItem, .dropdown{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    &.headerItem{
+      margin-top: 11px;
+    }
+    &:hover{
+      color: #007aff;
+    }
+  }
+}
+.tvSetting{
+  background-color: #25334b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 264px;
+  transform: translate(-50%, -50%);
+  padding: 8px 20px 20px;
+  .setting_title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #cccccc;
+  }
+  .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    cursor: pointer;
+  }
+  ul{
+    li{
+      margin-top: 10px;
+      display: flex;
+      label{
+        width: 40px;
+        color: #c3c7cd;
+      }
+      .settingValue{
+        width: 132px;
+      }
+      input{
+        width: 30px;
+        height: 20px;
+        font-size: 12px;
+        background-color: #2d3b52;
+        color: #7b8492;
+        text-align: center;
+        margin-right: 2px;
+      }
+      button{
+        margin-left: 10px;
+        color: #007aff;
+        cursor: pointer;
+      }
+    }
+  }
+  .button_wrap{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    button{
+      width: 100px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 4px;
+      border: solid 1px #354A70;
+      color: #cccccc;
+      &:nth-child(2) {
+        background-color: #007AFF;
+        color: #cccccc;
+      }
+    }
+  }
+}

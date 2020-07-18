@@ -1,0 +1,44 @@
+.wrap{
+  .titleRight{
+    line-height: 60px;
+    padding-left: 12px;
+    height: 60px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #3E4551;
+  }
+  .swapTitle{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    color: #3E4551;
+  }
+  .contractItem{
+    background-color: #ffffff;
+    color: #7C88A0;
+    font-size: 14px;
+    height: auto;
+    border-bottom: solid 1px #EDEFF4;
+    border-left: solid 2px transparent;
+    padding: 8px 14px;
+    &.active{
+      border-left: solid 2px #007AFF;
+    }
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+    p{
+      line-height: 30px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        p{
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

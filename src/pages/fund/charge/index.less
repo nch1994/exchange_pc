@@ -1,0 +1,172 @@
+.chargeWrap{
+  position: relative;
+  .chargeTop{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    .chargeTopTitle{
+      height: 50px;
+      padding-left: 33px;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+      span{
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: solid 2px #007AFF;
+        font-size: 16px;
+      }
+    }
+    .chargeNotice{
+      width: 609px;
+      height: 70px;
+      box-shadow:0px 0px 6px 0px rgba(59,123,253,0.09);
+      margin-left: 33px;
+      margin-bottom: 23px;
+      display: flex;
+      align-items: center;
+      span{
+        width: 4px;
+        height: 30px;
+        background-color: #FBA85A;
+        border-radius: 2px;
+        display: inline-block;
+      }
+      p{
+        color: #FBA85A;
+        font-size: 14px;
+        padding-left: 19px;
+      }
+    }
+    .form{
+      li{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 11px;
+        position: relative;
+        label {
+          width: 83px;
+          text-align: right;
+          margin-right: 24px;
+          font-size: #060C30;
+          color: 14px;
+        }
+        div{
+          border: solid 1px #F1F1F1;
+          border-radius: 2px;
+          width: 525px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          position: relative;
+          .types{
+            margin-left: 11px;
+          }
+          .icon{
+            position: absolute;
+            right: 17px;
+            width: 18px;
+            height: auto;
+            cursor: pointer;
+          }
+          .copy{
+            position: absolute;
+            right: 59px;
+            cursor: pointer;
+          }
+          .code{
+            position: absolute;
+            right: 17px;
+            cursor: pointer;
+          }
+          input{
+            margin-left: 12px;
+            border: none;
+            font-size: 14px;
+            color: #7C88A0;
+            min-width: 400px;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .list{
+          position: absolute;
+          height: auto;
+          top: 40px;
+          left: 107px;
+          background-color: #ffffff;
+          width: 525px;
+          z-index: 10;
+          border-left: solid 1px #F1F1F1;
+          border-right: solid 1px #F1F1F1;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-bottom: solid 1px #F1F1F1;
+          li{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: 42px;
+            border-bottom: solid 1px #F1F1F1;
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+            margin-bottom: 0;
+            img{
+              width: 24px;
+              margin-right: 12px;
+              margin-left: 11px;
+            }
+          }
+        }
+      }
+    }
+    .notice{
+      font-size: 12px;
+      padding-left: 108px;
+      color: rgba(0,0,0,0.5);
+    }
+  }
+  .chargeBottom{
+    width: 100%;
+    background-color: #ffffff;;
+    .chargeBottomTitle{
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05);
+      height: 51px;
+      line-height: 51px;
+      padding-left: 33px;
+      font-weight: bold;
+      color: #060C30;
+      font-size: 16px;
+    }
+    .table{
+      margin-top: 4px;
+      padding-left: 42px;
+      padding-right: 36px;
+      padding-bottom: 20px;
+      tr{
+        height: 36px;
+        line-height: 36px;
+        th{
+          background-color: #ffffff;
+          border-bottom: none;
+          text-align: center;
+          color: #060C30;
+          font-size: 14px;
+        }
+        td{
+          border-bottom: none;
+          text-align: center;
+          color: #7C88A0;
+          font-size: 14px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

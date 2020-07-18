@@ -1,0 +1,52 @@
+.container{
+  position: fixed;
+  min-height: inherit;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(#001225, 0.63);
+  .login{
+    width: 600px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -195px;
+    margin-left: -250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #eeeeee;
+    .title{
+      height: 76px;
+      line-height: 76px;
+      color: #3E4551;
+      font-size: 24px;
+      font-weight: 600;
+      padding-left: 35px;
+    }
+    .list{
+      margin: 0 auto;
+      width: 530px;
+    }
+    .btnWrap{
+      display: flex;
+      justify-content: space-between;
+      button{
+        width: 200px;
+      }
+    }
+  }
+}
+.forgetPwd{
+  color: #007AFF;
+  text-align: center;
+  display: block;
+}
+:global{
+  .ant-input-group-addon{
+    border: none;
+    color: #007AFF;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,117 @@
+
+.todayNiuren{
+  width: 100%;
+  .title{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    li:nth-child(1) {
+      margin-right: 19px;
+      img{
+        width: 58px;
+        height: 52px;
+      }
+    }
+    li:nth-child(2) {
+      margin-right: 20px;
+      p:nth-child(1){
+        color: #3E4551;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+      }
+      p:nth-child(2) {
+        color: #B2B8C4;
+        font-size: 16px;
+        height: 22px;
+        line-height: 22px;
+      }
+    }
+    li:nth-child(3){
+      font-size: 16px;
+      color: #B2B8C4;
+      p{
+        font-size: 22px;
+        color: #B2B8C4;
+        span{
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #ffffff;
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          line-height: 27px;
+          background-image: url('@/assets/image/time.png');
+          background-repeat: no-repeat;
+          background-size: 27px 27px;
+          background-position: center center;
+        }
+      }
+    }
+  }
+  .table{
+    width: 100%;
+    padding-top: 15px;
+    tr{
+      height: 40px;
+      th{
+        font-weight: bold;
+        color: #3E4551;
+        font-size: 16px;
+        text-align: center;
+        border-bottom: none;
+      }
+      td{
+        text-align: center;
+        color: rgba(0, 0, 0, .75);
+        font-size: 16px;
+        border-bottom: none !important;
+        .rank{
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          color: rgba(0, 0, 0, .75);
+          border-radius: 50%;
+        }
+        &:nth-last-child(1) {
+          width: 120px;
+        }
+      }
+      &:nth-child(1) {
+        td{
+          .rank{
+            background-color: #EA5555;
+            color: #ffffff;
+          }
+          .rate{
+            color: #EA5555;
+          }
+        }
+      }
+      &:nth-child(2) {
+        td{
+          .rank{
+            background-color: #FA6400;
+            color: #ffffff;
+          }
+          .rate{
+            color: #FA6400;
+          }
+        }
+      }
+      &:nth-child(3){
+        td{
+          .rank{
+            background-color: #F7B500;
+            color: #ffffff;
+          }
+          .rate{
+            color: #F7B500;
+          }
+        }
+      }
+    }
+  }
+}
